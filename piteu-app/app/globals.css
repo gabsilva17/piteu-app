@@ -1,0 +1,148 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  /* Palette: ["#0d1b2a","#1b263b","#415a77","#778da9","#e0e1dd"] */
+
+  /* Background: Darkest Blue #0d1b2a */
+  --background: #0d1b2a;
+  /* Foreground: Lightest Grey #e0e1dd */
+  --foreground: #e0e1dd;
+
+  /* Card: Slightly lighter than background #1b263b */
+  --card: #1b263b;
+  --card-foreground: #e0e1dd;
+
+  --popover: #0d1b2a;
+  --popover-foreground: #e0e1dd;
+
+  /* Primary: Lightest Grey #e0e1dd (User requested) */
+  --primary: #e0e1dd;
+  --primary-foreground: #0d1b2a;
+
+  /* Secondary: Dark Blue #1b263b */
+  --secondary: #1b263b;
+  --secondary-foreground: #e0e1dd;
+
+  /* Muted: Dark Blue #1b263b */
+  --muted: #1b263b;
+  --muted-foreground: #778da9;
+
+  /* Accent: Light Blue #778da9 */
+  --accent: #778da9;
+  --accent-foreground: #0d1b2a;
+
+  /* Destructive: Keep distinct or map to a palette color if suitable */
+  --destructive: #778da9;
+  --destructive-foreground: #0d1b2a;
+
+  --border: #415a77;
+  --input: #415a77;
+  --ring: #778da9;
+
+  --chart-1: #415a77;
+  --chart-2: #1b263b;
+  --chart-3: #778da9;
+  --chart-4: #0d1b2a;
+  --chart-5: #e0e1dd;
+
+  --sidebar: #0d1b2a;
+  --sidebar-foreground: #e0e1dd;
+  --sidebar-primary: #415a77;
+  --sidebar-primary-foreground: #e0e1dd;
+  --sidebar-accent: #1b263b;
+  --sidebar-accent-foreground: #e0e1dd;
+  --sidebar-border: #415a77;
+  --sidebar-ring: #778da9;
+}
+
+.dark {
+  /* Since the user wants "dark mode" as the main look,
+     we can keep these same variables or map them identically
+     so it stays dark regardless of system preference. */
+  --background: #0d1b2a;
+  --foreground: #e0e1dd;
+  --card: #1b263b;
+  --card-foreground: #e0e1dd;
+  --popover: #0d1b2a;
+  --popover-foreground: #e0e1dd;
+  --primary: #e0e1dd;
+  --primary-foreground: #0d1b2a;
+  --secondary: #1b263b;
+  --secondary-foreground: #e0e1dd;
+  --muted: #1b263b;
+  --muted-foreground: #778da9;
+  --accent: #778da9;
+  --accent-foreground: #0d1b2a;
+  --destructive: #778da9;
+  --destructive-foreground: #0d1b2a;
+  --border: #415a77;
+  --input: #415a77;
+  --ring: #778da9;
+  --chart-1: #415a77;
+  --chart-2: #1b263b;
+  --chart-3: #778da9;
+  --chart-4: #0d1b2a;
+  --chart-5: #e0e1dd;
+  --sidebar: #0d1b2a;
+  --sidebar-foreground: #e0e1dd;
+  --sidebar-primary: #415a77;
+  --sidebar-primary-foreground: #e0e1dd;
+  --sidebar-accent: #1b263b;
+  --sidebar-accent-foreground: #e0e1dd;
+  --sidebar-border: #415a77;
+  --sidebar-ring: #778da9;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
