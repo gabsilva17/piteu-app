@@ -44,97 +44,93 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  /* Palette: ["#0d1b2a","#1b263b","#415a77","#778da9","#e0e1dd"] */
+  --radius: 0.75rem;
 
-  /* Background: Darkest Blue #0d1b2a */
-  --background: #0d1b2a;
-  /* Foreground: Lightest Grey #e0e1dd */
-  --foreground: #e0e1dd;
+  /* Modern Dark Blue Palette */
+  --background: #0f172a;
+  /* Slate 900 */
+  --foreground: #f8fafc;
+  /* Slate 50 */
 
-  /* Card: Slightly lighter than background #1b263b */
-  --card: #1b263b;
-  --card-foreground: #e0e1dd;
+  --card: #1e293b;
+  /* Slate 800 */
+  --card-foreground: #f8fafc;
 
-  --popover: #0d1b2a;
-  --popover-foreground: #e0e1dd;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
 
-  /* Primary: Lightest Grey #e0e1dd (User requested) */
-  --primary: #e0e1dd;
-  --primary-foreground: #0d1b2a;
+  --primary: #38bdf8;
+  /* Sky 400 */
+  --primary-foreground: #0f172a;
 
-  /* Secondary: Dark Blue #1b263b */
-  --secondary: #1b263b;
-  --secondary-foreground: #e0e1dd;
+  --secondary: #334155;
+  /* Slate 700 */
+  --secondary-foreground: #f8fafc;
 
-  /* Muted: Dark Blue #1b263b */
-  --muted: #1b263b;
-  --muted-foreground: #778da9;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  /* Slate 400 */
 
-  /* Accent: Light Blue #778da9 */
-  --accent: #778da9;
-  --accent-foreground: #0d1b2a;
+  --accent: #1e293b;
+  --accent-foreground: #38bdf8;
 
-  /* Destructive: Keep distinct or map to a palette color if suitable */
-  --destructive: #778da9;
-  --destructive-foreground: #0d1b2a;
+  --destructive: #ef4444;
+  /* Red 500 */
+  --destructive-foreground: #f8fafc;
 
-  --border: #415a77;
-  --input: #415a77;
-  --ring: #778da9;
+  --border: #334155;
+  --input: #334155;
+  --ring: #38bdf8;
 
-  --chart-1: #415a77;
-  --chart-2: #1b263b;
-  --chart-3: #778da9;
-  --chart-4: #0d1b2a;
-  --chart-5: #e0e1dd;
+  --chart-1: #38bdf8;
+  --chart-2: #818cf8;
+  --chart-3: #c084fc;
+  --chart-4: #f472b6;
+  --chart-5: #fb7185;
 
-  --sidebar: #0d1b2a;
-  --sidebar-foreground: #e0e1dd;
-  --sidebar-primary: #415a77;
-  --sidebar-primary-foreground: #e0e1dd;
-  --sidebar-accent: #1b263b;
-  --sidebar-accent-foreground: #e0e1dd;
-  --sidebar-border: #415a77;
-  --sidebar-ring: #778da9;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #38bdf8;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  --sidebar-ring: #38bdf8;
 }
 
 .dark {
-  /* Since the user wants "dark mode" as the main look,
-     we can keep these same variables or map them identically
-     so it stays dark regardless of system preference. */
-  --background: #0d1b2a;
-  --foreground: #e0e1dd;
-  --card: #1b263b;
-  --card-foreground: #e0e1dd;
-  --popover: #0d1b2a;
-  --popover-foreground: #e0e1dd;
-  --primary: #e0e1dd;
-  --primary-foreground: #0d1b2a;
-  --secondary: #1b263b;
-  --secondary-foreground: #e0e1dd;
-  --muted: #1b263b;
-  --muted-foreground: #778da9;
-  --accent: #778da9;
-  --accent-foreground: #0d1b2a;
-  --destructive: #778da9;
-  --destructive-foreground: #0d1b2a;
-  --border: #415a77;
-  --input: #415a77;
-  --ring: #778da9;
-  --chart-1: #415a77;
-  --chart-2: #1b263b;
-  --chart-3: #778da9;
-  --chart-4: #0d1b2a;
-  --chart-5: #e0e1dd;
-  --sidebar: #0d1b2a;
-  --sidebar-foreground: #e0e1dd;
-  --sidebar-primary: #415a77;
-  --sidebar-primary-foreground: #e0e1dd;
-  --sidebar-accent: #1b263b;
-  --sidebar-accent-foreground: #e0e1dd;
-  --sidebar-border: #415a77;
-  --sidebar-ring: #778da9;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --popover: #0f172a;
+  --popover-foreground: #f8fafc;
+  --primary: #38bdf8;
+  --primary-foreground: #0f172a;
+  --secondary: #334155;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #1e293b;
+  --accent-foreground: #38bdf8;
+  --destructive: #ef4444;
+  --destructive-foreground: #f8fafc;
+  --border: #334155;
+  --input: #334155;
+  --ring: #38bdf8;
+  --chart-1: #38bdf8;
+  --chart-2: #818cf8;
+  --chart-3: #c084fc;
+  --chart-4: #f472b6;
+  --chart-5: #fb7185;
+  --sidebar: #0f172a;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #38bdf8;
+  --sidebar-primary-foreground: #0f172a;
+  --sidebar-accent: #1e293b;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #334155;
+  --sidebar-ring: #38bdf8;
 }
 
 @layer base {
@@ -144,5 +140,9 @@
 
   body {
     @apply bg-background text-foreground;
+    background-image: radial-gradient(circle at top center,
+        hsl(215 27% 20%),
+        hsl(222 47% 11%));
+    background-attachment: fixed;
   }
 }

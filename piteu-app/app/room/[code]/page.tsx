@@ -12,7 +12,7 @@ export default async function RoomPage({
 
     const { data: room } = await supabase
         .from("rooms")
-        .select("id, code")
+        .select("id, code, admin_user_id, location, price_range, suggestions, is_generating_suggestions")
         .eq("code", code)
         .single();
 

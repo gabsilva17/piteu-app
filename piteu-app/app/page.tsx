@@ -1,4 +1,6 @@
 import { createRoom, joinRoom } from "./actions";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default async function Home({
   searchParams,
@@ -27,12 +29,9 @@ export default async function Home({
 
         <div className="flex w-full flex-col gap-4">
           <form action={createRoom}>
-            <button
-              type="submit"
-              className="w-full rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-            >
+            <Button type="submit" className="w-full">
               Create New Room
-            </button>
+            </Button>
           </form>
 
           <div className="relative flex items-center py-2">
@@ -42,19 +41,15 @@ export default async function Home({
           </div>
 
           <form action={joinRoom} className="flex flex-col gap-3">
-            <input
+            <Input
               name="code"
               type="text"
               placeholder="Enter Room Code"
               required
-              className="w-full rounded-lg border border-input bg-background px-4 py-3 text-foreground placeholder-muted-foreground outline-none focus:border-ring focus:ring-1 focus:ring-ring"
             />
-            <button
-              type="submit"
-              className="w-full rounded-lg border border-input bg-background px-4 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
-            >
+            <Button type="submit" variant="outline" className="w-full">
               Join Room
-            </button>
+            </Button>
           </form>
         </div>
       </main>
