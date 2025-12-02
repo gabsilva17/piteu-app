@@ -14,10 +14,10 @@ export default async function Home({
       <main className="flex w-full max-w-md flex-col items-center gap-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-foreground">
-            Piteu Rooms
+            Piteu
           </h1>
           <p className="mt-2 text-muted-foreground">
-            Create a room or join an existing one to hang out.
+            Create a room or join an existing one.
           </p>
         </div>
 

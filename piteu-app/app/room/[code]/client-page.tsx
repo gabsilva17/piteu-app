@@ -497,7 +497,7 @@ export default function RoomClient({ room }: RoomClientProps) {
                             <h1 className="text-xl font-bold">Room {room.code}</h1>
                             <div className="flex items-center gap-2 text-sm text-muted-foreground">
                                 <span className="flex h-2 w-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.5)]" />
-                                Playing as <span className="font-semibold text-foreground">{username}</span>
+                                <span className="font-semibold text-foreground">{username}</span>
                             </div>
                         </div>
                     </div>

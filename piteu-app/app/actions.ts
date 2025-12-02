@@ -340,7 +340,7 @@ async function generateSuggestionsWithGemini(
 
         // Use the requested model with safety settings
         const model = genAI.getGenerativeModel({
-            model: "gemini-2.5-pro", // Using the pro model for better reasoning
+            model: "gemini-2.5-flash-lite", 
             safetySettings: [
                 {
                     category: HarmCategory.HARM_CATEGORY_HARASSMENT,
