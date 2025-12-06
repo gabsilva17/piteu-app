@@ -1,9 +1,5 @@
 # 🍽️ Pitéu
 
-> **O fim do "Não sei, escolhe tu".**
->
-> *Construído em 24 horas.*
-
 **Pitéu** é uma aplicação web colaborativa desenhada para resolver o problema de decidir onde ir jantar em grupo. Utilizando uma mecânica de salas simples estilo "Kahoot" e o poder da AI, o Pitéu encontra o restaurante perfeito que agrada a gregos e troianos.
 
 ## ✨ Funcionalidades
